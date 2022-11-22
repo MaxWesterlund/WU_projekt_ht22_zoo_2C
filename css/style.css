@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+}
+#home_body{
+    display: grid;
+    grid-template-areas:
+    "he he he"
+    "we .  . "
+    ".  ab . ";
+}
+
+header{
+    grid-area: he;
+    height: 50px;
+    background-color: bisque;
+}
+#welcome_screen{
+    margin-top: 70px;
+    margin-left: 40px;
+    grid-area: we;
+    display: grid;
+    justify-content: start;
+    grid-template-areas: 
+    "h2 h2 h2"
+    "h3 h3 h3"
+    "b1 b2 b3";
+}
+#welcome_text{
+    grid-area: h2;
+}
+#welcome_body_text{
+    margin-top: 15px;
+    grid-area: h3;
+}
+.buttons{
+    margin-top: 10px;
+    display: flex;
+    width: 100px;
+    height: 40px;
+    margin-right: 20px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+#home_btn_1{
+    grid-area: b1;
+    background-color: green;
+}
+#home_btn_2{
+    grid-area: b2;
+    background-color: aquamarine;
+}
+#home_btn_3{
+    grid-area: b3;
+    background-color: blue;
+}
+#about_us_text{
+    grid-area: ab;
+}
