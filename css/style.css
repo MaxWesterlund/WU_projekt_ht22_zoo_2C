@@ -1,40 +1,48 @@
-*{
+* {
     margin: 0;
 }
-#home_body{
+#home_body {
     display: grid;
+    align-items: stretch;
     grid-template-areas:
     "he he he"
-    "we .  . "
-    ".  ab . ";
+    "we .  . ";
 }
-
-header{
+header {
     grid-area: he;
-    height: 50px;
+    height: 70px;
     background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: start;
 }
-#welcome_screen{
-    margin-top: 70px;
-    margin-left: 40px;
+#return_btn {
+    background-color: chocolate;
+    margin: 10px;
+}
+#welcome_screen {
+    background-color: aqua;
+    width: 400px;   
+    height: 200px;
+    margin-left: 10%;
     grid-area: we;
     display: grid;
-    justify-content: start;
+    justify-content: space-between;
+    align-content: end;
     grid-template-areas: 
     "h2 h2 h2"
     "h3 h3 h3"
     "b1 b2 b3";
 }
-#welcome_text{
+#welcome_text {
     grid-area: h2;
 }
-#welcome_body_text{
-    margin-top: 15px;
+#welcome_body_text {
     grid-area: h3;
+    margin-top: 15px;
 }
-.buttons{
-    margin-top: 10px;
-    display: flex;
+.buttons {
+    margin-top: 20px;
     width: 100px;
     height: 40px;
     margin-right: 20px;
@@ -42,18 +50,52 @@ header{
     align-items: center;
     justify-content: center;
 }
-#home_btn_1{
+#home_btn_1 {
     grid-area: b1;
     background-color: green;
 }
-#home_btn_2{
+#home_btn_2 {
     grid-area: b2;
     background-color: aquamarine;
 }
-#home_btn_3{
+#home_btn_3 {
     grid-area: b3;
     background-color: blue;
 }
-#about_us_text{
-    grid-area: ab;
+#about_us_page_body {
+    display: grid;
+    justify-content: start;
+    grid-template-areas: 
+    "he"
+    "ti"
+    "pa";
+}
+#about_us_title {
+    text-align: center;
+    grid-area: ti;
+    margin-top: 20px;
+}
+#about_us_body_text {
+    text-align: center;
+    grid-area: pa;
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+#our_animals_page_body {
+    display: grid;
+    justify-content: space-between;
+    grid-template-areas: 
+    "he he he"
+    "c1 c2 c3"
+    "c4 c5 c6";
+}
+.cards {
+    width: 1fr;
+    height: 300px;
+    margin: 40px;
+}
+#animal_1 {
+    background-color: aqua;
+    grid-area: c1
 }
