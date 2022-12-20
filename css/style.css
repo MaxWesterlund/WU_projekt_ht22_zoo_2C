@@ -1,27 +1,53 @@
 * {
     margin: 0;
 }
+h1 {
+    font-family: 'Merriwather Sans', sans-serif;
+}
+h2 {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+h3 {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+p {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: larger;
+    line-height: 30px;
+}
+a {
+    font-family: 'Merriweather Sans', sans-serif;
+    text-decoration: none;
+}
+a:link {
+    color: black;
+}
+a:visited {
+    color: black;
+}
 #home_body {
     display: grid;
-    align-items: stretch;
+    background-color: whitesmoke;
     grid-template-areas:
     "he he he"
-    "we .  . ";
+    "we im im";
 }
 header {
     grid-area: he;
-    height: 70px;
-    background-color: bisque;
+    height: auto;
+    background-color: rgb(219, 219, 219);
     display: flex;
     align-items: center;
     justify-content: start;
 }
 #return_btn {
-    background-color: chocolate;
     margin: 10px;
 }
+#logo_image {
+    height: 100px;
+    width: auto;
+}
 #welcome_screen {
-    background-color: aqua;
     width: 400px;   
     height: 200px;
     margin-left: 10%;
@@ -43,28 +69,39 @@ header {
 }
 .buttons {
     margin-top: 20px;
-    width: 100px;
+    width: 120px;
     height: 40px;
     margin-right: 20px;
     border-radius: 5px;
+    border: 3px solid black;
+    background-color: whitesmoke;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
+.buttons:hover {
+    background-color: rgb(219, 219, 219);
+}
 #home_btn_1 {
     grid-area: b1;
-    background-color: green;
 }
 #home_btn_2 {
     grid-area: b2;
-    background-color: aquamarine;
 }
 #home_btn_3 {
     grid-area: b3;
-    background-color: blue;
+}
+.button_text {
+    text-align: center;
+}
+#background_image {
+    grid-area: im;
+    justify-self: end;
 }
 #about_us_page_body {
     display: grid;
     justify-content: start;
+    background-color: whitesmoke;
     grid-template-areas: 
     "he"
     "ti"
@@ -73,29 +110,81 @@ header {
 #about_us_title {
     text-align: center;
     grid-area: ti;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 #about_us_body_text {
     text-align: center;
-    grid-area: pa;
     margin-top: 20px;
     margin-left: 20%;
     margin-right: 20%;
 }
-#our_animals_page_body {
+#about_us_img_1 {
+    float: right;
+    margin-left: 20px;
+    border-radius: 5px;
+    width: 300px;
+}
+#about_us_img_2 {
+    float: left;
+    margin-right: 20px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+#our_staff_page_body {
     display: grid;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
     grid-template-areas: 
     "he he he"
     "c1 c2 c3"
     "c4 c5 c6";
 }
 .cards {
+    background-color: rgb(219, 219, 219);
     width: 1fr;
-    height: 300px;
-    margin: 40px;
+    height: auto;
+    margin: 50px;
+    border-radius: 20px;
+    box-shadow: -5px 5px rgb(135, 135, 135);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-#animal_1 {
-    background-color: aqua;
-    grid-area: c1
+.staff_images {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 150px;
+    border-radius: 100%;
+    border: 5px solid black;
+}
+.staff_name {
+    text-align: center;
+}
+.staff_description {
+    text-align: center;
+    margin: 40px;
+    margin-top: 10px;
+}
+#staff_1 {
+    grid-area: c1;
+    margin-left: 250px;
+}
+#staff_2 {
+    grid-area: c2;
+}
+#staff_3 {
+    grid-area: c3;
+    margin-right: 250px;
+}
+#staff_4 {
+    grid-area: c4;
+    margin-left: 250px;
+}
+#staff_5 {
+    grid-area: c5;
+}
+#staff_6 {
+    grid-area: c6;
+    margin-right: 250px;
 }
